@@ -9,7 +9,7 @@
 <body>
     <h2>Caracetere especiales</h2>
     <!-- dev.w3.org/html5/html-author/charref -->
-    Esta es la etiqueta &lt;p&gt; y tiene &copy;
+    Esta es la etiqueta &lt;p&gt;
     <h2>Abreviaturas</h2>
     <p>La <abbr title="Organización de naciones Unidas">ONU</abbr></p>
     <p>La <a href="http://www.w3.org" target="_blank"><abbr title="World Wide Web Consortium">W3C</abbr></a> se encarga de definir estandares</p>
@@ -21,5 +21,31 @@
         <!-- Cuando la fecha es mundial se incluye una Z -->
         La hora del planeta será hoy a las <time datetime="20:00Z" title="20:00">8pm</time> en todo el mundo
     </p>
+    <figure>
+        <img src="img/coche.jpg" alt="coche" width="15%" height="15%">
+        <figcaption>Coche deportivo de alta gama</figcaption>
+    </figure>
+    <p><cite>Dan Brown</cite> y su libro <cite>Angeles y demonios</cite></p>
+    <p>En Italia <cite>la Mona Lisa</cite> es conocida como <cite lang="it">La Gioconda</cite></p>
+    <p>
+        <!-- Pone el texto entre comillas -->
+        y luego ella dijo: <q>Mañana vamos de viaje</q> <br>
+        en francés <q lang="fr">Avez-vous lu le livrer</q> <br>
+        Según la wikipedia la revolución industrial es: <q cite="https://es.wikipedia.org/wiki/Programaci%C3%B3n">es el proceso de diseñar, codificar, depurar y mantener el
+        código fuente de programas de computadora</q>
+    </p>
+    <!-- Esta etiqueta no puede ir dentro de un párrafo -->
+    <blockquote>
+        La programación se rige por reglas y un conjunto más o menos reducido de órdenes, expresiones, instrucciones y comandos que tienden a asemejarse a una lengua natural
+        acotada (en inglés); y que además tienen la particularidad de una reducida ambigüedad. Cuanto menos ambiguo es un lenguaje de programación, se dice, es más potente.
+        Bajo esta premisa, y en el extremo, el lenguaje más potente existente es el binario, con ambigüedad nula (lo cual lleva a pensar así del lenguaje ensamblador).[cita
+        requerida] En los lenguajes de programación de alto nivel se distinguen diversos elementos entre los que se incluyen el léxico propio del lenguaje y las reglas
+        semánticas y sintácticas
+        <footer>Según léxico y programación</footer>
+    </blockquote>
+    <footer>
+        Mi empresa de páginas web <br>
+        <small>&copy;2018. Todos los deerechos reservados</small>
+    </footer>
 </body>
 </html>
