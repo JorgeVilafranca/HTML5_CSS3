@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Modulo 02</title>
 </head>
 <body>
-    <h2>Caracetere especiales</h2>
+    <h2>Caracteres especiales</h2>
     <!-- dev.w3.org/html5/html-author/charref -->
     Esta es la etiqueta &lt;p&gt;
     <h2>Abreviaturas</h2>
@@ -43,9 +43,28 @@
         semánticas y sintácticas
         <footer>Según léxico y programación</footer>
     </blockquote>
+    <p>Mi amigo tiene los <span style="color: green;">ojos verdes</span></p>
+    <h2>Gráficas</h2>
+    <!-- https://caniuse.com/ para comprobar que etiquetas valen en los exploradores -->
+    <p>Zaragoza: <meter min="-5" max="50" value="35" high="30" low="10" optimum="22">35º C</meter>35º C</p>
+    <p>Zaragoza: <meter min="-5" max="50" value="23" high="35" low="10" optimum="22">23º C</meter>23º C</p>
+    <p>Zaragoza: <meter min="-5" max="50" value="5" high="35" low="10" optimum="22">5º C</meter>5º C</p>
+    
+    <p>Desgaste de los frenos: <meter min="0" max="100" value="21" optimum="0">21%</meter>21% desgastado</p>
+
+    <p>
+        Progreso <progress max="100" value="0" id="barra"></progress>
+        <input type="button" value="cargar" onclick="setInterval('cargalo()', 1000)">
+    </p>
     <footer>
         Mi empresa de páginas web <br>
         <small>&copy;2018. Todos los deerechos reservados</small>
     </footer>
+    <script>
+        function cargalo() {
+            var barra = document.getElementById('barra');
+            if (barra.value < 100) barra.value += 5;
+        }
+    </script>
 </body>
 </html>
