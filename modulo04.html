@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Modulo 04</title>
+</head>
+<body>
+    <h1>FORMULARIO DE CONTACTO</h1>
+    <form action="modulo04.html" method="POST">
+        <div>
+            <label for="name">Nombre:</label>
+            <input type="text" name="name" id="name" size="30" maxlength="5">
+        </div>
+        <div>
+            <label for="psw">Contraseña:</label>
+            <input type="password" name="psw" id="psw" size="30" minlength="6" maxlength="10">
+        </div>
+        <div>
+            <h4>Genero</h4>
+            <input type="radio" name="genero" id="genero-hombre" value="Hombre" checked>
+            <label for="genero-hombre">Hombre</label><br>
+            <input type="radio" name="genero" id="genero-mujer" value="Mujer">
+            <label for="genero-mujer">Mujer</label>
+        </div>
+        <div>
+            <h4>Dias disponibles</h4>
+            <input type="checkbox" name="dias" id="lunes" value="lunes">
+            <label for="lunes">L</label>
+            <input type="checkbox" name="dias" id="martes" value="martes">
+            <label for="martes">M</label>
+            <input type="checkbox" name="dias" id="miercoles" value="miercoles">
+            <label for="miercoles">X</label>
+            <input type="checkbox" name="dias" id="jueves" value="jueves">
+            <label for="jueves">J</label>
+            <input type="checkbox" name="dias" id="viernes" value="viernes">
+            <label for="viernes">V</label>
+            <input type="checkbox" name="dias" id="sabado" value="sabado">
+            <label for="sabado">S</label>
+            <input type="checkbox" name="dias" id="domingo" value="domingo">
+            <label for="domingo">D</label>
+        </div>
+        <div>
+            <label for="email">eMail:</label>
+            <input type="email" name="email" id="email" required>
+        </div>
+        <div>
+            <label for="url">WEB:</label>
+            <input type="url" name="web" id="web" placeholder="http://www.tusitio.es">
+        </div>
+        <div>
+            <label for="phone">Teléfono:</label>
+            <input type="tel" name="phone" id="phone" placeholder="+34-976-123-123">
+        </div>
+        <div>
+            <label for="search">Buscar:</label>
+            <input type="search" name="search" id="search">
+        </div>
+        <div>
+            <input type="submit" value="Enviar...">
+            <input type="reset" value="Limpiar">
+        </div>
+    </form>
+</body>
+</html>
