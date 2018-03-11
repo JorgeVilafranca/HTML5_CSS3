@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,7 +15,7 @@
         </div>
         <div>
             <label for="psw">Contraseña:</label>
-            <input type="password" name="psw" id="psw" size="30" minlength="6" maxlength="10">
+            <input type="password" name="psw" id="psw" size="30" minlength="6" maxlength="10" autofocus>
         </div>
         <div>
             <h4>Genero</h4>
@@ -38,7 +38,7 @@
             <label for="viernes">V</label>
             <input type="checkbox" name="dias" id="sabado" value="sabado">
             <label for="sabado">S</label>
-            <input type="checkbox" name="dias" id="domingo" value="domingo">
+            <input type="checkbox" name="dias" id="domingo" value="domingo" disabled>
             <label for="domingo">D</label>
         </div>
         <div>
@@ -56,6 +56,51 @@
         <div>
             <label for="search">Buscar:</label>
             <input type="search" name="search" id="search">
+        </div>
+        <div>
+            <label for="cantidad">Cantidad de productos:</label>
+            <input type="number" name="cantidad" id="cantidad" max="10" min="0" size="10" step="1">
+        </div>
+        <div>
+            <label for="experiencia">Experiencia en informática:</label>
+            <input type="range" name="experiencia" id="experiencia" min="0" max="10">
+        </div>
+        <div>
+            <label for="fecha">Fecha de nacimiento:</label>
+            <input type="date" name="fecha" id="fecha">
+        </div>
+        <div>
+            <label for="hora">Hora de entrega:</label>
+            <input type="time" name="hora" id="hora">
+        </div>
+        <div>
+            <label for="color">¿Color favorito?:</label>
+            <input type="color" name="color" id="color">
+        </div>
+        <div>
+            <label for="bio">Haga su consulta:</label><br>
+            <textarea name="bio" id="bio" cols="30" rows="5"></textarea>
+        </div>
+        <div>
+            <label for="estado">Seleccione su estado:</label>
+            <select name="estado" id="estado">
+                <option value="viudo">Viudo</option>
+                <option value="casado">Casado</option>
+                <option value="divorciado">Divorciado</option>
+            </select>
+        </div>
+        <div>
+            <label for="publicidad">¿Como nos conocistes?:</label>
+            <select name="publicidad" id="publicidad">
+                <optgroup label="Online">
+                    <option value="redes-sociales">Redes Sociales</option>
+                    <option value="motores-busqueda">Motores de búsqueda</option>
+                </optgroup>
+                <optgroup label="Offline">
+                    <option value="periodicos">Periodicos</option>
+                    <option value="paneles-publi">Paneles Publicitarios</option>
+                </optgroup>
+            </select>
         </div>
         <div>
             <input type="submit" value="Enviar...">
