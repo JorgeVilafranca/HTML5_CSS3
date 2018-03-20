@@ -9,3 +9,7 @@ Ejercicios para entender HTML5 y CSS3
 - Modulo 04: Formulario.
 
 - Modulo 05: Etiquetas para realizar la estructura de HTML y roles para mejorar la accesibilidad para discapacitados.
+
+- Modulo06: Etiqueta para mostrar video y sonido.
+
+- Modulo07: 
