@@ -7,10 +7,24 @@
     <title>Modulo 06</title>
 </head>
 <body>
+    <!-- src - ruta del video -->
     <!-- controls - muestra los controles el video -->
     <!-- autoplay - inicia el video al cargarse la página -->
     <!-- loop - vuelve a reproducir el video cuando termine -->
     <!-- poster - imagen previa para cuando el video está parado -->
-    <video src="assets/video/video-test.mp4" width="320px" controls poster="assets/img/thumbtest.png"></video>
+    <video width="320px" controls poster="assets/img/thumbtest.png">
+        <!-- para poner varios formatos de un video -->
+        <source src="assets/video/video-test.mp4" type="video/mp4">
+        <source src="assets/video/video-test.webm" type="video/webm">
+    </video>
+
+    <audio controls>
+        <!-- Cuando un explorador no soporta audio -->
+        <p>Lo sentimos, tu explorador no soporta audio</p>
+        <source src="assets/audio/teaser.mp3" type="audio/mp3">
+            <source src="assets/audio/teaser.ogg" type="audio/ogg">
+    </audio>
+    <!-- Reproductores alternativos www.jwplayer.com www.videojs.com mediaelementjs.com -->
+    <!-- Sitios para alojar videos www.youtube.com www.vimeo.com www.wistia.com -->
 </body>
 </html>
