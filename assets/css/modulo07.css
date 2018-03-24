@@ -1,0 +1,35 @@
+body p {
+    font-size: 6px;
+}
+
+/* Especificidad: 0+0+0+1=1 */
+p {
+    border: 2px solid green;
+    font-size: 20px !important;
+}
+
+div {
+    color: red;
+    font-size: 20px;
+    border: 2px solid red;
+}
+
+ul {
+    /* con inherit queremos que una propiedad del padre se hereden */
+    border: inherit;
+}
+
+/* Especificidad: 0+0+1+2=12 */
+div.peligro p {
+    background: blue;
+}
+
+/* Especificidad: 0+1+0+2=102 */
+div#cuidado p {
+    background: orange;
+}
+
+/* Especificidad: 0+1+0+3=103 */
+body#inicio div p {
+    background: yellow;
+}
