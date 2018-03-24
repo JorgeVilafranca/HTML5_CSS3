@@ -12,4 +12,4 @@ Ejercicios para entender HTML5 y CSS3
 
 - Modulo06: Etiqueta para mostrar video y sonido.
 
-- Modulo07: 
+- Modulo07: Tres maneras de aplicar el estilo a una página, el estilo que se aplica a una etiqueta es a más cercana a ella y como hacer para poner uno como importante, herencia en css, hay propiedades que no se heredan pero se puede hacer que lo hagan con css. La cascada en css, se valoran primero por su importancia (important), segundo por su especificidad (¿es un estilo en línea? + IDs + Clases, pseudo clases (a:hover) y atributos (div[class=""]) + Etiquetas y pseudo elemento (p:first-line) = total)
